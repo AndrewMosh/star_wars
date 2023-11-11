@@ -16,8 +16,6 @@ ul {
   overflow: auto;
   scroll-snap-type: x mandatory;
   padding: 0 calc((var(--width, 80vw) * 0.5) - (var(--card-size, 300px) * 0.5));
-  scroll-timeline: --rad;
-  scroll-timeline-axis: inline;
 }
 
 li {
@@ -37,34 +35,6 @@ article {
   animation: scalify both ease-in-out;
   animation-timeline: --item;
   animation-range: cover 40% cover 60%;
-}
-.link > span {
-  position: absolute;
-  background: url("../../images/default.jpg");
-
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-
-  inset: 0;
-  display: grid;
-  place-items: center;
-}
-
-span {
-  font-size: 2.5rem;
-  font-weight: 300;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  color: var(--gray-0);
-}
-
-.link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-color: rgba(0, 0, 0, 0.676);
 }
 
 @keyframes scalify {
@@ -124,4 +94,33 @@ span > span {
   100% {
     translate: 0 -100%;
   }
+}
+
+.link > span {
+  position: absolute;
+  background: url("../../images/default.jpg");
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+span {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: var(--gray-0);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-color: rgba(0, 0, 0, 0.676);
 }
