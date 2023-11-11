@@ -36,7 +36,7 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path="/" element={<FilmList data={data} />} />
+          <Route path="/star_wars" element={<FilmList data={data} />} />
         </Routes>
         <Routes>
           <Route path="/:filmTitle" element={<Details data={data} />} />

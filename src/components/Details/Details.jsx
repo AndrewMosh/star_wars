@@ -10,7 +10,7 @@ const Details = ({ data }) => {
       <div className={styles["scrolling-text"]}>
         <div>
           <span className={styles.close}>
-            <Link to="/">&#10008;</Link>
+            <Link to="/star_wars">&#10008;</Link>
           </span>
         </div>
         <div>{film.title}</div>
