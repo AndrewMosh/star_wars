@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://andrewmosh.github.io/star_wars",
+  "homepage": "http://andrewmosh.github.io/star_wars/",
   "dependencies": {
     "@apollo/client": "^3.7.17",
     "@testing-library/jest-dom": "^5.17.0",
