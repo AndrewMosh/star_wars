@@ -14,7 +14,7 @@ function FilmList({ data }) {
                 <div className={styles.backdrop}></div>
                 <span>
                   <span className={styles.word}>
-                    <span>{film.title}</span>
+                    <span className={styles.subword}>{film.title}</span>
                   </span>
                 </span>
               </Link>

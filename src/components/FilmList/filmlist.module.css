@@ -16,6 +16,8 @@ ul {
   overflow: auto;
   scroll-snap-type: x mandatory;
   padding: 0 calc((var(--width, 80vw) * 0.5) - (var(--card-size, 300px) * 0.5));
+  scroll-timeline: --rad;
+  scroll-timeline-axis: inline;
 }
 
 li {
@@ -76,7 +78,7 @@ article {
   z-index: 2;
 }
 
-span > span {
+.subword {
   display: inline-block;
   translate: 0 100%;
   animation: move-on-up both ease-in-out;
