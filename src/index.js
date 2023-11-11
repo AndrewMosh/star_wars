@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ApolloProvider } from "@apollo/client"; // If you are using Apollo Client
-import client from "./apolloClient"; // If you are using Apollo Client, import your Apollo Client instance
+import { ApolloProvider } from "@apollo/client";
+import client from "./apolloClient";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
