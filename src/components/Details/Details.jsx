@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import styles from "./scrollingtext.module.css";
-
+import React from "react";
 const Details = ({ data }) => {
   const { filmTitle } = useParams();
   const film = data.allFilms.films.find((film) => film.title === filmTitle);
