@@ -35,7 +35,7 @@ article {
   overflow: hidden;
   scale: 0.8;
   animation: scalify both ease-in-out;
-  animation-timeline: --item;
+  /* animation-timeline: --item; */
   animation-range: cover 40% cover 60%;
 }
 
@@ -54,7 +54,7 @@ article {
   background-size: 200% 200%;
   background-position: 0% 50%;
   animation: colorify both ease-in-out, shift-bg both linear;
-  animation-timeline: --item;
+  /* animation-timeline: --item; */
   animation-range: cover 40% cover 60%, contain;
 }
 
@@ -82,7 +82,7 @@ article {
   display: inline-block;
   translate: 0 100%;
   animation: move-on-up both ease-in-out;
-  animation-timeline: --item;
+  /* animation-timeline: --item; */
   animation-range: cover 40% cover 60%;
 }
 
