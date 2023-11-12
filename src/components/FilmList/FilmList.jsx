@@ -13,9 +13,7 @@ function FilmList({ data }) {
               <Link className={styles.link} to={`/${film.title}`}>
                 <div className={styles.backdrop}></div>
                 <span>
-                  <span className={styles.word}>
-                    <span className={styles.subword}>{film.title}</span>
-                  </span>
+                  <span className={styles.word}>{film.title}</span>
                 </span>
               </Link>
             </article>

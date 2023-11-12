@@ -16,14 +16,6 @@ ul {
   overflow: auto;
   scroll-snap-type: x mandatory;
   padding: 0 calc((var(--width, 80vw) * 0.5) - (var(--card-size, 300px) * 0.5));
-  scroll-timeline: --rad;
-  scroll-timeline-axis: inline;
-}
-
-li {
-  view-timeline-name: --item;
-  view-timeline-axis: inline;
-  scroll-snap-align: center;
 }
 
 article {
@@ -33,44 +25,6 @@ article {
 
   position: relative;
   overflow: hidden;
-  scale: 0.8;
-  animation: scalify both ease-in-out;
-  /* animation-timeline: --item; */
-  animation-range: cover 40% cover 60%;
-}
-
-@keyframes scalify {
-  50% {
-    scale: 1;
-    background-position: 100% 100%;
-  }
-}
-
-.backdrop {
-  position: absolute;
-  inset: 0;
-  filter: grayscale(1);
-  background-image: var(--bg);
-  background-size: 200% 200%;
-  background-position: 0% 50%;
-  animation: colorify both ease-in-out, shift-bg both linear;
-  animation-timeline: --item;
-  animation-range: cover 40% cover 60%, contain;
-}
-
-@keyframes colorify {
-  50% {
-    filter: grayscale(0);
-  }
-}
-
-@keyframes shift-bg {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
 }
 
 .word {
@@ -81,21 +35,6 @@ article {
 .subword {
   display: inline-block;
   translate: 0 100%;
-  animation: move-on-up both ease-in-out;
-  animation-timeline: --item;
-  animation-range: cover 40% cover 60%;
-}
-
-@keyframes move-on-up {
-  0% {
-    translate: 0 100%;
-  }
-  50% {
-    translate: 0 0;
-  }
-  100% {
-    translate: 0 -100%;
-  }
 }
 
 .link > span {
