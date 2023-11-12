@@ -22,7 +22,7 @@ article {
   width: var(--card-size, 300px);
   aspect-ratio: 3 / 4;
   border-radius: var(--radius-3);
-
+  transform: scale(0.8);
   position: relative;
   overflow: hidden;
 }
@@ -40,14 +40,17 @@ article {
 .link > span {
   position: absolute;
   background: url("../../images/default.jpg");
-
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
   inset: 0;
   display: grid;
   place-items: center;
+}
+
+article:hover {
+  transform: scale(1);
+  transition: 0.9s;
 }
 
 span {
@@ -62,6 +65,62 @@ span {
   content: "";
   position: absolute;
   inset: 0;
-
   background-color: rgba(0, 0, 0, 0.676);
+}
+
+.gradient-text {
+  color: transparent;
+  background: conic-gradient(
+    #d9d7f1 12%,
+    #baabda 12%,
+    #baabda 33%,
+    #e7fbbe 33%,
+    #f9fbbe 55%,
+    #ff9008 55%,
+    #ffcbcb 70%,
+    #b5deff 70%,
+    #b5deff 87%,
+    #f7d1ba 87%
+  );
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  animation: expand-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+.gradient-text:hover {
+  animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+}
+
+@keyframes expand-rev {
+  0% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
 }

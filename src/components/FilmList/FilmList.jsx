@@ -13,7 +13,13 @@ function FilmList({ data }) {
               <Link className={styles.link} to={`/${film.title}`}>
                 <div className={styles.backdrop}></div>
                 <span>
-                  <span className={styles.word}>{film.title}</span>
+                  <div className={styles.word}>
+                    <div>
+                      <span className={styles["gradient-text"]}>
+                        {film.title}
+                      </span>
+                    </div>
+                  </div>
                 </span>
               </Link>
             </article>
