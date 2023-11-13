@@ -1,5 +1,6 @@
 {
-  "name": "client",
+  "name": "star-wars",
+  "description": "Star Wars",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
